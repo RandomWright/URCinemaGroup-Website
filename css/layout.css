@@ -261,7 +261,10 @@ fieldset[disabled] .btn-theme {
 /*---------------- CAL -----------------------*/
 
 .responsiveCal {
-	position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
 }
  
 .responsiveCal iframe {

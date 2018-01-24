@@ -27,6 +27,8 @@
 
         <!-- THEME STYLES -->
         <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+		<link href="css/testing.css" rel="stylesheet" type="text/css"/>
+		
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
@@ -38,7 +40,14 @@
 
     <!-- PHP - HEADER -->
 	<?php $selected = 'index'; include "inc/header.inc"; ?>
-
+	
+	<?
+      include_once("connect.php");
+      $query = "SELECT room FROM website";
+      $request = mysql_query($query);
+      $row = mysql_fetch_assoc($request);
+      $room = $row['room'];
+    ?>
         <!--========== PAGE LAYOUT ==========-->
         <!-- Work -->
         <div class="bg-color-sky-light">
@@ -83,12 +92,12 @@
                             </div>
                             <div class="work-content">
                                 <h3 class="color-white margin-b-5">Meetings Every Sunday!</h3>
-                                <p class="color-white margin-b-0">2pm in Wilson Commons</p>
+                                <p class="color-white margin-b-0">2pm in <? echo($room); ?></p>
                             </div>
                             <a class="content-wrapper-link" href="#"></a>
                         </div>
                         <!-- End Work -->
-                    </div>
+					</div>
                 </div>
                 <!-- End Masonry Grid -->
             </div>
@@ -132,7 +141,7 @@
             <div class="row margin-b-20">
                 <div class="text-center">
                     <h2>URCG</h2>
-                    <p>The University of Rochester Cinema Group (URCG) a student group of students that screens movies every Friday and Saturday night throughout the academic year. We show high definition digital films in Hoyt Auditorium, located on the River Campus. We show a mixture of popular movies between theater and DVD release as well as indie flicks and older films. It is easy to get involved in the club, and help bring movies to campus. We are always looking for suggestions for movies, and our meetings are open to all who wish to attend (Sundays at 2pm in Wilson Commons 121).</p>
+                    <p>The University of Rochester Cinema Group (URCG) a student group of students that screens movies every Friday and Saturday night throughout the academic year. We show high definition digital films in Hoyt Auditorium, located on the River Campus. We show a mixture of popular movies between theater and DVD release as well as indie flicks and older films. It is easy to get involved in the club, and help bring movies to campus. We are always looking for suggestions for movies, and our meetings are open to all who wish to attend (Sundays at 2pm in <? echo($room); ?>).</p>
                 </div>
             </div>
             <!--// end row -->
@@ -140,7 +149,105 @@
 		</div>
         <!-- End URCG -->
 
-        <!-- Work -->
+		<!-- FEEDS -->
+		<div class="overflow-h">
+            <div class="content-md container">
+                <div class="row">
+					<div class="col-md-5">
+					<div style="text-align: center; position: relative;">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FURCinema%2F&tabs=timeline%2Cevents&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					</div>
+					</div>
+					
+					<div class="col-md-2"></div>
+					
+					<div class="col-md-5">
+					<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48053/"></script> <!-- end feedwind code -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Feeds -->
+
+        <!-- Reviews -->
+		<div class="bg-color-sky-light">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Movie Reviews</h2>
+
+                    <!-- Swiper Testimonials -->
+                    <div class="swiper-slider swiper-testimonials">
+                        <!-- Swiper Wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        Depending on whom you ask, “<Strong>mother!</Strong>” is a tragic opus detailing the destruction of the environment; “<Strong>mother!</Strong>” is a minimalist retelling of both the Old and New Testaments; and “<Strong>mother!</Strong>” is an intensely self-critical indictment of how artists treat their friends and families; or “<Strong>mother!</Strong>” is either brilliantly feminist or deeply misogynist.
+										<br><br>None of these interpretations are necessarily wrong.
+                                    </div>
+                                    <div class="margin-b-20">
+                                        More than anything, though, “<Strong>mother!</Strong>” is about the ways in which an audience takes ownership of art, rendering the artist obsolete.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Scott Abrams</span>, Campus Times</p>
+									<a class="link" href="http://www.campustimes.org/2017/09/24/youre-right-mother/">Read More</a>
+                                </blockquote>
+                            </div>
+							
+                            <div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        “<Strong>Get Out</Strong>” is the social thriller that is breaking box office records for writer and director Jordan Peele of the comedy duo Key and Peele. The plot centers on the relationship of Chris (played by Daniel Kaluuya) and his girlfriend Rose (Allison Williams) as they head out of the city to visit Rose’s parents’ house in the nondescript suburbs.
+										<br>This is the first time Chris is meeting Rose’s parents, and plot twist, he’s black.
+                                    </div>
+                                    <div class="margin-b-20">
+										My boyfriend and I saw the movie at the advanced screening at the Little Theatre (courtesy of UR Cinema Group), and it was more than what either of us were expecting. We laughed, we screamed, and as an audience we were all cheering and rooting for Chris to get, well, the fuck out.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Zeke Starling & Rachel Weitzner</span>, Campus Times</p>
+									<a class="link" href="http://www.campustimes.org/2017/03/28/get-out-film-gets-woke/">Read More</a>
+                                </blockquote>
+                            </div>
+							
+							<div class="swiper-slide">
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        What does love feel like?<br><br>I love my mom. I love the smell of birthday candles. I’ve never been in love with anyone, but I kissed someone for the first time this year, at a whole 19 years old. Maybe the term is “late bloomer,” but I don’t think it feels like that.<br><br>Every crush I’ve ever had, everyone I’ve cried for  — it all just feels like blooming. 
+                                    </div>
+                                    <div class="margin-b-20">
+										Coming-of-age is something that has always fascinated me, which may be why I was so affected by Luca Guadagnino’s film “<Strong>Call Me By Your Name</Strong>.” 
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Ashley Bardhan</span>, Campus Times</p>
+									<a class="link" href="http://www.campustimes.org/2017/12/04/call-name-feels-like-love/">Read More</a>
+                                </blockquote>
+                            </div>
+							<div class="swiper-slide">
+							<blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        If you want to feel hopeful, watch “<strong>Hidden Figures</strong>.”
+										<br><br>It’s a stunning story with stunning performances from Taraji P. Henson, Octavia Spencer, and Janelle Monáe. In classic “based on a true event” fashion, “<strong>Hidden Figures</strong>” offers a unique plot, artistic shots of shadows on walls, a killer soundtrack (thanks, Pharell Williams), and an unnecessary heterosexual romance, mixed in with hints of white savior complex.
+                                    </div>
+                                    <div class="margin-b-20">
+                                        Like in life, though, if you ignore everything else that’s happening and focus on the smart, hardworking women, it’s pretty cool.
+                                    </div>
+                                    <p><span class="fweight-700 color-link">Isabel Drukker</span>, Campus Times</p>
+									<a class="link" href="http://www.campustimes.org/2017/01/31/hidden-figures-arise-in-period-piece/">Read More</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- End Swiper Wrapper -->
+
+                        <!-- Pagination -->
+                        <div class="swiper-testimonials-pagination"></div>
+                    </div>
+                    <!-- End Swiper Testimonials -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+		</div>
+        <!-- End ReViews -->
+		
+		<!-- Work -->
         <div class="overflow-h">
             <div class="content-md container">
                 <div class="row margin-b-40">
@@ -167,6 +274,8 @@
                             <a class="content-wrapper-link" href=""></a>
                         </div>
                         <!-- End Work -->
+						
+						
                     </div>
                     <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
                         <!-- Work -->
@@ -229,101 +338,7 @@
             </div>
         </div>
         <!-- End Work -->
-
-        <!-- Reviews -->
-		<div class="bg-color-sky-light">
-        <div class="content-md container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <h2>Movie Reviews</h2>
-
-                    <!-- Swiper Testimonials -->
-                    <div class="swiper-slider swiper-testimonials">
-                        <!-- Swiper Wrapper -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        Depending on whom you ask, “Mother!” is a tragic opus detailing the destruction of the environment; “Mother!” is a minimalist retelling of both the Old and New Testaments; and “Mother!” is an intensely self-critical indictment of how artists treat their friends and families; or “Mother!” is either brilliantly feminist or deeply misogynist.
-										<br>None of these interpretations are necessarily wrong.
-                                    </div>
-                                    <div class="margin-b-20">
-                                        More than anything, though, “Mother!” is about the ways in which an audience takes ownership of art, rendering the artist obsolete.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Scott Abrams</span>, Campus Times</p>
-									<a class="link" href="http://www.campustimes.org/2017/09/24/youre-right-mother/">Read More</a>
-                                </blockquote>
-                            </div>
-							
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        “Get Out” is the social thriller that is breaking box office records for writer and director Jordan Peele of the comedy duo Key and Peele. The plot centers on the relationship of Chris (played by Daniel Kaluuya) and his girlfriend Rose (Allison Williams) as they head out of the city to visit Rose’s parents’ house in the nondescript suburbs.
-										<br>This is the first time Chris is meeting Rose’s parents, and plot twist, he’s black.
-                                    </div>
-                                    <div class="margin-b-20">
-										My boyfriend and I saw the movie at the advanced screening at the Little Theatre (courtesy of UR Cinema Group), and it was more than what either of us were expecting. We laughed, we screamed, and as an audience we were all cheering and rooting for Chris to get, well, the fuck out.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Zeke Starling & Rachel Weitzner</span>, Campus Times</p>
-									<a class="link" href="http://www.campustimes.org/2017/03/28/get-out-film-gets-woke/">Read More</a>
-                                </blockquote>
-                            </div>
-							
-							<div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        “Fury Road” could be described with about equal accuracy as a reboot and as a continuation of the saga. It’s a reboot in the sense that it’s the first film to feature an actor other than Mel Gibson as the titular ex-cop Max Rockatansky. And while “Fury Road” has a fresh plot, it does feature extensive reuse of elements and even entire scenes from the first three movies. The climactic chases from the second and third films are repeated here, sometimes shot-for-shot. It’s a sequel, though, in the sense that no continuity is broken; nothing from the first three films is overwritten. All four movies take place in the same terrible future (which gets progressively worse with each movie). The quasi-Bondian switch from Gibson to Tom Hardy doesn’t change a thing about Max as a character—he’s still as taciturn, haunted, and unkillable as ever.
-                                    </div>
-                                    <div class="margin-b-20">
-										Film technology has come a long way in the thirty years since “Mad Max 3: Beyond Thunderdome,” and so have George Miller’s finances. The gutter-punk aesthetic...
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Sam Passanisi</span>, Campus Times</p>
-									<a class="link" href="http://www.campustimes.org/2016/02/18/mad-max-fury-road-brazes-ahead/">Read More</a>
-                                </blockquote>
-                            </div>
-							<div class="swiper-slide">
-							<blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        If you want to feel hopeful, watch “Hidden Figures.”
-										<br>It’s a stunning story with stunning performances from Taraji P. Henson, Octavia Spencer, and Janelle Monáe. In classic “based on a true event” fashion, “Hidden Figures” offers a unique plot, artistic shots of shadows on walls, a killer soundtrack (thanks, Pharell Williams), and an unnecessary heterosexual romance, mixed in with hints of white savior complex.
-                                    </div>
-                                    <div class="margin-b-20">
-                                        Like in life, though, if you ignore everything else that’s happening and focus on the smart, hardworking women, it’s pretty cool.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Isabel Drukker</span>, Campus Times</p>
-									<a class="link" href="http://www.campustimes.org/2017/01/31/hidden-figures-arise-in-period-piece/">Read More</a>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- End Swiper Wrapper -->
-
-                        <!-- Pagination -->
-                        <div class="swiper-testimonials-pagination"></div>
-                    </div>
-                    <!-- End Swiper Testimonials -->
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-		</div>
-        <!-- End ReViews -->
 		
-		<!-- FEEDS -->
-		<div class="overflow-h">
-            <div class="content-md container">
-                <div class="row">
-					<div class="col-md-6">
-					<div class="responsiveCal">
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FURCinema%2F&tabs=timeline%2Cevents&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-					</div>
-					
-					<div class="col-md-6">
-					<!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="48053/"></script> <!-- end feedwind code -->
-					</div>
-				</div>
-			</div>
-		</div>
 
         <!-- Team -->
         <div class="bg-color-sky-light">
@@ -390,6 +405,7 @@
         <script src="js/components/wow.min.js" type="text/javascript"></script>
         <script src="js/components/swiper.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
+
 
     </body>
     <!-- END BODY -->

@@ -41,13 +41,14 @@
 	<?
       include_once("connect.php");
 
-      $query = "SELECT trailer_name, trailer_email FROM website";
+      $query = "SELECT trailer_name, trailer_email, room FROM website";
       $request = mysql_query($query);
 
       $row = mysql_fetch_assoc($request);
 
       $trailer_name = $row['trailer_name'];
       $trailer_email = $row['trailer_email'];
+	  $room = $row['room'];
     ?>
 
         <!--========== PAGE LAYOUT ==========-->
@@ -55,6 +56,7 @@
         <div id="map" class="map height-300"></div>
 
         <!-- Contact List -->
+		<!-- Icons of Simple Line Icons-->
         <div class="section-seperator">
             <div class="content-md container">
                 <div class="row">
@@ -77,6 +79,7 @@
 						The building also houses the Student Activities Office, student clubs and government organizations,
 						an information center, student lounges, and conference rooms.</p>
                         <ul class="list-unstyled contact-list">
+							<li><i class="margin-r-10 color-base icon-users"></i>Meeting Room: <? echo($room); ?></li>
                             <li><i class="margin-r-10 color-base icon-home"></i><a href="https://www.rochester.edu/college/wcsa/">Wilson Commons Student Activities</a></li>
 							<li><i class="margin-r-10 color-base icon-map"></i><a href="https://www.rochester.edu/maps/">University of Rochester Map</a></li>
                         </ul>

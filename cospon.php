@@ -41,13 +41,14 @@
 	<?
       include_once("connect.php");
 
-      $query = "SELECT altprog_name, altprog_email FROM website";
+      $query = "SELECT altprog_name, altprog_email, room FROM website";
       $request = mysql_query($query);
 
       $row = mysql_fetch_assoc($request);
 
       $altprog_name = $row['altprog_name'];
       $altprog_email = $row['altprog_email'];
+	  $room = $row['room'];
     ?>
 
         <!--========== PAGE LAYOUT ==========-->
@@ -259,7 +260,7 @@
                         <p>UR Cinema Group has been a staple of the University of Rochester's community since 1970. The club's purpose is to publicly show movies from many genres varying from blockbusters to independent films, providing the campus with a positive and entertaining movie-going experience. We show our primary programming on Friday and Saturday evenings and also have free alternative programs (films which are co-sponsored with other campus organizations) on pre-scheduled weeknights.</p>
                     </div>
                     <p>Outside of our film programming, we further seek to provide a fun and fulfilling environment for our members through weekly meetings to discuss film and other goings on, off-campus screenings, and social events such as our annual Oscar party.</p>
-					<p>Meetings are held every Sunday at 2 PM in Wilson Commons 121. Students are welcome to join at anytime; members gain admission to speical events and a chance to earn the full size movie posters that are on display.</p>
+					<p>Meetings are held every Sunday at 2 PM in <? echo($room); ?>. Students are welcome to join at anytime; members gain admission to speical events and a chance to earn the full size movie posters that are on display.</p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
                     <img class="img-responsive" src="img/397x400/01.jpg" alt="Our Office">

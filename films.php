@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- ==============================
-    Project:        Metronic "Acidus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-    Author:         KeenThemes / Charlotte Wright
+    Project:	Metronic "Acidus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
+    Author:		KeenThemes / Charlotte Wright
 ================================== -->
 <html lang="en" class="no-js">
     <!-- BEGIN HEAD -->
@@ -89,8 +89,7 @@
 		
 		<div class="bg-color-sky-light">
 			<div class="content-md container">
-                <img class="img-responsive" src="img/other/poster.jpg" alt="Slider Image">
-				<p><strong>Update: Valerian and the City of a Thousand Planets has been replaced by IT (2017).</strong></p>
+                <img class="img-responsive" src="img/other/posterSpring.jpg" alt="Poster Image">
             </div>
         </div>
 
@@ -193,7 +192,7 @@
                     <img class="full-width img-responsive" src="img/397x400/02.jpg" alt="Portfolio Image">
                 </div>
                 <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
-                    <img class="full-width img-responsive" src="img/800x400/02.jpg" alt="Portfolio Image">
+                    <img class="full-width img-responsive" src="img/other/poster.jpg" alt="Portfolio Image">
                 </div>
             </div>
             <!-- End Masonry Grid -->

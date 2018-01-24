@@ -6,19 +6,7 @@
 <html lang="en" class="no-js">
     <!-- BEGIN HEAD -->
     <head>
-        <meta charset="utf-8"/>
-        <title>UR Cinema Group</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta name="description" content="Offical website for the University of Rochester Cinema Group.">
-		<meta name="author" content="Charlotte Wright">
-		<meta name="keywords" content="university, college, rochester, urcg, cinema group, movies" />
-		<meta name="robots" content="index, follow, noarchive" />
-
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <?php include "inc/head-info.inc"; ?>
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>

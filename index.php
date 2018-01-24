@@ -12,13 +12,6 @@
         <link href="css/animate.css" rel="stylesheet">
         <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
 
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-		<link href="css/testing.css" rel="stylesheet" type="text/css"/>
-		
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
     </head>
     <!-- END HEAD -->
 

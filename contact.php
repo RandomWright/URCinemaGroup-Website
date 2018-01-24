@@ -7,17 +7,12 @@
     <!-- BEGIN HEAD -->
     <head>
         <?php include "inc/head-info.inc"; ?>
-
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-		<link href="css/testing.css" rel="stylesheet" type="text/css"/>
+	<link href="css/testing.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		
 		<!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/animate.css" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
     </head>
     <!-- END HEAD -->
 

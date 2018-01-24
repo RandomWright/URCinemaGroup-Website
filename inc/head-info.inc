@@ -1,4 +1,4 @@
-		<meta charset="utf-8"/>
+<meta charset="utf-8"/>
         <title>UR Cinema Group</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -11,3 +11,10 @@
         <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+		
+		<!-- THEME STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+		

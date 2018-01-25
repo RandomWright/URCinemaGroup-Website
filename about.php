@@ -27,15 +27,15 @@
 
     <!--========== PAGE LAYOUT ==========-->
 	
-    <!-- Slider -->
+    <!-- Image -->
         <div class="bg-color-sky-light">
             <div class="content-md container">
-                <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
+                <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Main Image">
             </div>
         </div>
-        <!-- End Slider -->
+    <!-- End Image -->
 
-        <!-- About -->
+    <!-- About -->
         <div class="content-md container">
             <div class="row margin-b-20">
                 <div class="col-sm-6">
@@ -50,23 +50,23 @@
                         <p>UR Cinema Group has been a staple of the University of Rochester's community since 1970. The club's purpose is to publicly show movies from many genres varying from blockbusters to independent films, providing the campus with a positive and entertaining movie-going experience. We show our primary programming on Friday and Saturday evenings and also have free alternative programs (films which are co-sponsored with other campus organizations) on pre-scheduled weeknights.</p>
                     </div>
                     <p>Outside of our film programming, we further seek to provide a fun and fulfilling environment for our members through weekly meetings to discuss film and other goings on, off-campus screenings, and social events such as our annual Oscar party.</p>
-					<p>Meetings are held every Sunday at 2 PM in <? echo($room); ?>. Students are welcome to join at anytime; members gain admission to speical events and a chance to earn the full size movie posters that are on display.</p>
+					<p>Meetings are held every Sunday at 2 PM in <? echo($room); ?>. Students are welcome to join at anytime; members gain admission to special events and a chance to earn the full size movie posters that are on display.</p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="img/640x380/01.jpg" alt="URCG">
                 </div>
             </div>
             <!--// end row -->
         </div>
-        <!-- End About -->
+    <!-- End About -->
 
-        <!-- Team -->
+    <!-- Team -->
         <div class="bg-color-sky-light">
             <div class="content-md container">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
                         <h2>Join the Team</h2>
-                        <p>Stop by any of our weekly meetings that are Sunday at 2pm in Wilson Commons. Stay up-to-date by joining the group on the CCC and by following us on Facebook.</p>
+                        <p>Stop by any of our weekly meetings that are Sunday at 2pm in <? echo($room); ?>. Stay up-to-date by joining the group on the CCC and by following us on Facebook.</p>
                     </div>
                 </div>
                 <!--// end row -->
@@ -116,25 +116,25 @@
         </div>
         <!-- End Team -->
 
-        <!-- Member Activites -->
+        <!-- Member Activities -->
         <div class="section-seperator" id="members">
             <div class="content-md container">
                 <div class="row">
                     <div class="col-sm-6 sm-margin-b-50">
-                        <h2>Member Activites</h2>
+                        <h2>Member Activities</h2>
                         <p>Trips to the Theater, Plan Events, Work Movie Shifts, Watch Trailers, Film Discussions, Vote, Tunnel Painting and More...</p>
 						<img class="img-responsive" src="img/other/osc01.jpg" alt="OSCAR">
 						<p><br>Learn more about the <a href="history">history of this website</a>.</p>
                     </div>
 					<div class="col-xs-6 sm-margin-b-50">
-						<img class="img-responsive" src="img/other/paint.jpg" alt="Slider Image">
+						<img class="img-responsive" src="img/other/paint.jpg" alt="Tunnel Painting">
 					</div>
                 </div>
                 <!--// end row -->
 
             </div>
         </div>
-        <!-- Members -->
+        <!-- eMembers -->
 		
 		
         <!--========== END PAGE LAYOUT ==========-->
